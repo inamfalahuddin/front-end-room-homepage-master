@@ -47,7 +47,7 @@
 
                     @include desktop {
                         position: relative;
-                        left: 200px;
+                        left: 180px;
                     }
                 }
 
@@ -62,7 +62,7 @@
                     cursor: pointer;
 
                     @include desktop {
-                        width: 100px;
+                        width: 90px;
                         height: 80px;
                     }
 
@@ -85,7 +85,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.16em;
+            font-size: 1.05em;
+
+            h1 {
+                font-size: 3em;
+            }
 
             &.text-fade-in {
                 animation: 1s ease normal transition-content;
@@ -176,7 +180,7 @@
             display: flex;
             align-items: center;
             height: 267px;
-            font-size: 1.1em;
+            font-size: 1.05em;
 
             .hero-footer-center-content {
                 padding: 70px 40px;
