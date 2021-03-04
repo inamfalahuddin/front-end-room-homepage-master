@@ -47,7 +47,7 @@
 
                     @include desktop {
                         position: relative;
-                        left: 160px;
+                        left: 200px;
                     }
                 }
 
@@ -62,7 +62,7 @@
                     cursor: pointer;
 
                     @include desktop {
-                        width: 80px;
+                        width: 100px;
                         height: 80px;
                     }
 
@@ -85,13 +85,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 1.16em;
 
             &.text-fade-in {
                 animation: 1s ease normal transition-content;
             }
 
             .container {
-                padding: 70px 40px;
+                padding: 70px 70px;
             }
 
             @include desktop {
@@ -108,7 +109,7 @@
 
             .jumbotron-hero-text-arrow {
                 display: flex;
-                margin-top: 60px;
+                margin-top: 30px;
                 text-transform: uppercase;
                 cursor: pointer;
                 z-index: 5;
@@ -175,6 +176,7 @@
             display: flex;
             align-items: center;
             height: 267px;
+            font-size: 1.1em;
 
             .hero-footer-center-content {
                 padding: 70px 40px;

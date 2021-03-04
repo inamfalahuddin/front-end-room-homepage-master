@@ -1,10 +1,8 @@
 /* https://www.frontendmentor.io/profile/inamfalahuddin/solutions
-   Author: In'am Falahuddin
    v1.0 | 201110057
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
-
 html,
 body,
 div,
@@ -260,8 +258,8 @@ nav .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 769px) {
@@ -275,18 +273,18 @@ nav .container .nav-hamburger-menu {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 20px;
   height: 12px;
   cursor: pointer;
   z-index: 6;
   -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
@@ -297,31 +295,31 @@ nav .container .nav-hamburger-menu {
   }
 }
 
-nav .container .nav-hamburger-menu>span {
+nav .container .nav-hamburger-menu > span {
   width: 100%;
   height: 2px;
   background-color: white;
   -webkit-transform-origin: 2.1px 1.3px;
-  transform-origin: 2.1px 1.3px;
+          transform-origin: 2.1px 1.3px;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
 }
 
-nav .container .nav-hamburger-menu.open>span:first-child {
+nav .container .nav-hamburger-menu.open > span:first-child {
   background-color: black;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
-nav .container .nav-hamburger-menu.open>span:nth-child(2) {
+nav .container .nav-hamburger-menu.open > span:nth-child(2) {
   background-color: black;
   opacity: 0;
 }
 
-nav .container .nav-hamburger-menu.open>span:last-child {
+nav .container .nav-hamburger-menu.open > span:last-child {
   background-color: black;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 nav .container .nav-links {
@@ -329,11 +327,11 @@ nav .container .nav-links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -342,7 +340,7 @@ nav .container .nav-links {
   background-color: white;
   padding-left: 5%;
   -webkit-transform: translateX(-800px);
-  transform: translateX(-800px);
+          transform: translateX(-800px);
   opacity: 0;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -355,10 +353,10 @@ nav .container .nav-links {
     display: -ms-flexbox;
     display: flex;
     -webkit-transform: translate(0);
-    transform: translate(0);
+            transform: translate(0);
     -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+        -ms-flex-order: 2;
+            order: 2;
     opacity: 1;
     padding-left: 40px;
     background-color: transparent;
@@ -368,7 +366,7 @@ nav .container .nav-links {
 nav .container .nav-links.open {
   opacity: 1;
   -webkit-transform: translateX(0);
-  transform: translateX(0);
+          transform: translateX(0);
 }
 
 nav .container .nav-links li {
@@ -379,14 +377,12 @@ nav .container .nav-links li {
   nav .container .nav-links li {
     opacity: 1;
   }
-
   nav .container .nav-links li a {
     padding: 0 20px;
     color: white;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
   }
-
   nav .container .nav-links li a:hover {
     font-weight: 600;
   }
@@ -398,20 +394,20 @@ nav .container .nav-logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media screen and (min-width: 769px) {
   nav .container .nav-logo {
     width: auto;
     -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -430,7 +426,7 @@ nav .container .nav-logo {
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-animation: overlay-in .2s ease-in-out forwards;
-  animation: overlay-in .2s ease-in-out forwards;
+          animation: overlay-in .2s ease-in-out forwards;
 }
 
 @media screen and (min-width: 769px) {
@@ -442,7 +438,7 @@ nav .container .nav-logo {
 .nav-background-overlay.overlay-out {
   display: block;
   -webkit-animation: overlay-out .4s ease-in-out forwards;
-  animation: overlay-out .4s ease-in-out forwards;
+          animation: overlay-out .4s ease-in-out forwards;
 }
 
 .main {
@@ -452,7 +448,7 @@ nav .container .nav-logo {
 .jumbotron {
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "jumbotron-header""jumbotron-footer";
+      grid-template-areas: "jumbotron-header" "jumbotron-footer";
 }
 
 .jumbotron .jumbotron-hero-header {
@@ -461,16 +457,16 @@ nav .container .nav-logo {
   grid-area: jumbotron-header;
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "hero-image""hero-text";
+      grid-template-areas: "hero-image" "hero-text";
   -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 769px) {
   .jumbotron .jumbotron-hero-header {
-    grid-template-areas: 'hero-image hero-text';
+        grid-template-areas: 'hero-image hero-text';
     -ms-grid-columns: 837px 1fr;
-    grid-template-columns: 837px 1fr;
+        grid-template-columns: 837px 1fr;
   }
 }
 
@@ -486,7 +482,7 @@ nav .container .nav-logo {
 
 .jumbotron .jumbotron-hero-header .jumbotron-hero-image.image-fade-in {
   -webkit-animation: 1s ease normal transition-image;
-  animation: 1s ease normal transition-image;
+          animation: 1s ease normal transition-image;
 }
 
 @media screen and (min-width: 769px) {
@@ -501,11 +497,11 @@ nav .container .nav-logo {
   display: flex;
   height: 357px;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media screen and (min-width: 769px) {
@@ -523,7 +519,7 @@ nav .container .nav-logo {
 @media screen and (min-width: 769px) {
   .jumbotron .jumbotron-hero-header .jumbotron-hero-image .hero-image-pagination .pagination {
     position: relative;
-    left: 160px;
+    left: 200px;
   }
 }
 
@@ -532,11 +528,11 @@ nav .container .nav-logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50px;
   height: 50px;
   background-color: black;
@@ -546,7 +542,7 @@ nav .container .nav-logo {
 
 @media screen and (min-width: 769px) {
   .jumbotron .jumbotron-hero-header .jumbotron-hero-image .hero-image-pagination span {
-    width: 80px;
+    width: 100px;
     height: 80px;
   }
 }
@@ -555,12 +551,12 @@ nav .container .nav-logo {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
 .jumbotron .jumbotron-hero-header .jumbotron-hero-image .hero-image-pagination span:hover img {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .jumbotron .jumbotron-hero-header .jumbotron-hero-text {
@@ -571,29 +567,29 @@ nav .container .nav-logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.16em;
 }
 
 .jumbotron .jumbotron-hero-header .jumbotron-hero-text.text-fade-in {
   -webkit-animation: 1s ease normal transition-content;
-  animation: 1s ease normal transition-content;
+          animation: 1s ease normal transition-content;
 }
 
 .jumbotron .jumbotron-hero-header .jumbotron-hero-text .container {
-  padding: 70px 40px;
+  padding: 70px 70px;
 }
 
 @media screen and (min-width: 769px) {
   .jumbotron .jumbotron-hero-header .jumbotron-hero-text .container {
     width: 100%;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
-
   .jumbotron .jumbotron-hero-header .jumbotron-hero-text .container .container-text {
     padding: 20px;
   }
@@ -603,7 +599,7 @@ nav .container .nav-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
+  margin-top: 30px;
   text-transform: uppercase;
   cursor: pointer;
   z-index: 5;
@@ -641,18 +637,18 @@ nav .container .nav-logo {
   height: 810px;
   display: -ms-grid;
   display: grid;
-  grid-template-areas: 'footer-left''footer-center''footer-right';
+      grid-template-areas: 'footer-left' 'footer-center' 'footer-right';
   -ms-grid-rows: 300px 300px 224px;
-  grid-template-rows: 300px 300px 224px;
+      grid-template-rows: 300px 300px 224px;
   -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 769px) {
   .jumbotron .jumbotron-hero-footer {
-    grid-template-areas: 'footer-left footer-center footer-right';
+        grid-template-areas: 'footer-left footer-center footer-right';
     -ms-grid-columns: 420px 1fr 420px;
-    grid-template-columns: 420px 1fr 420px;
+        grid-template-columns: 420px 1fr 420px;
     height: 267px;
   }
 }
@@ -676,9 +672,10 @@ nav .container .nav-logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 267px;
+  font-size: 1.1em;
 }
 
 .jumbotron .jumbotron-hero-footer .hero-footer-center .hero-footer-center-content {
@@ -706,13 +703,12 @@ nav .container .nav-logo {
   from {
     opacity: 0;
     -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+            transform: translateX(100%);
   }
-
   to {
     opacity: 1;
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -720,13 +716,12 @@ nav .container .nav-logo {
   from {
     opacity: 0;
     -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+            transform: translateX(100%);
   }
-
   to {
     opacity: 1;
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -736,12 +731,10 @@ nav .container .nav-logo {
     opacity: 0;
     display: none;
   }
-
   0% {
     visibility: visible;
     opacity: 0;
   }
-
   to {
     visibility: visible;
     opacity: 1;
@@ -754,12 +747,10 @@ nav .container .nav-logo {
     opacity: 0;
     display: none;
   }
-
   0% {
     visibility: visible;
     opacity: 0;
   }
-
   to {
     visibility: visible;
     opacity: 1;
@@ -771,12 +762,10 @@ nav .container .nav-logo {
     visibility: visible;
     opacity: 1;
   }
-
   90% {
     visibility: visible;
     opacity: 0;
   }
-
   to {
     visibility: hidden;
     opacity: 0;
@@ -788,12 +777,10 @@ nav .container .nav-logo {
     visibility: visible;
     opacity: 1;
   }
-
   90% {
     visibility: visible;
     opacity: 0;
   }
-
   to {
     visibility: hidden;
     opacity: 0;
@@ -804,7 +791,6 @@ nav .container .nav-logo {
   0% {
     background-position: 500px;
   }
-
   100% {
     opacity: 1;
   }
@@ -814,7 +800,6 @@ nav .container .nav-logo {
   0% {
     background-position: 500px;
   }
-
   100% {
     opacity: 1;
   }
@@ -824,9 +809,8 @@ nav .container .nav-logo {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
+            transform: translateX(-50px);
   }
-
   100% {
     opacity: 1;
   }
@@ -836,12 +820,10 @@ nav .container .nav-logo {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
+            transform: translateX(-50px);
   }
-
   100% {
     opacity: 1;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
