@@ -1,0 +1,199 @@
+.main {
+    width: 100%;
+}
+
+.jumbotron {
+    display: grid;
+    grid-template-areas: 'jumbotron-header''jumbotron-footer';
+
+    .jumbotron-hero-header {
+        grid-area: jumbotron-header;
+        display: grid;
+        grid-template-areas: 'hero-image''hero-text';
+        grid-template-columns: 1fr;
+
+        @include desktop {
+            grid-template-areas: 'hero-image hero-text';
+            grid-template-columns: 837px 1fr;
+        }
+
+        .jumbotron-hero-image {
+            grid-area: hero-image;
+            height: 357px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &.image-fade-in {
+                animation: 1s ease normal transition-image;
+            }
+
+            @include desktop {
+                height: 530px;
+            }
+
+            .hero-image-pagination {
+                display: flex;
+                height: 357px;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                @include desktop {
+                    height: 530px;
+                }
+
+                .pagination {
+                    display: flex;
+
+                    @include desktop {
+                        position: relative;
+                        left: 160px;
+                    }
+                }
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    background-color: black;
+                    z-index: 10;
+                    cursor: pointer;
+
+                    @include desktop {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    img {
+                        transition: all .2s ease;
+                        transform: scale(1);
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .jumbotron-hero-text {
+            grid-area: hero-text;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.text-fade-in {
+                animation: 1s ease normal transition-content;
+            }
+
+            .container {
+                padding: 70px 40px;
+            }
+
+            @include desktop {
+
+                .container {
+                    width: 100%;
+                    box-sizing: border-box;
+
+                    .container-text {
+                        padding: 20px;
+                    }
+                }
+            }
+
+            .jumbotron-hero-text-arrow {
+                display: flex;
+                margin-top: 60px;
+                text-transform: uppercase;
+                cursor: pointer;
+                z-index: 5;
+                position: relative;
+                color: black;
+
+                &:hover {
+                    color: $secoundary;
+                }
+
+
+                p {
+                    letter-spacing: 10px;
+                    color: black;
+
+                    &:hover {
+                        color: $secoundary;
+                    }
+                }
+
+                img {
+                    transition: all .2s ease;
+                    margin-left: 50px;
+                }
+
+                &:hover {
+                    img {
+                        margin-left: 65px;
+                    }
+                }
+            }
+        }
+    }
+
+    .jumbotron-hero-footer {
+        grid-area: jumbotron-footer;
+        height: 810px;
+        display: grid;
+        grid-template-areas:
+            'footer-left'
+            'footer-center'
+            'footer-right'
+        ;
+        grid-template-rows: 300px 300px 224px;
+        grid-template-columns: 1fr;
+
+        @include desktop {
+            grid-template-areas: 'footer-left footer-center footer-right';
+            grid-template-columns: 420px 1fr 420px;
+            height: 267px;
+        }
+
+        .hero-footer-left {
+            grid-area: footer-left;
+            background-image: url(/images/image-about-dark.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 267px;
+        }
+
+        .hero-footer-center {
+            grid-area: footer-center;
+            display: flex;
+            align-items: center;
+            height: 267px;
+
+            .hero-footer-center-content {
+                padding: 70px 40px;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+        }
+
+        .hero-footer-right {
+            grid-area: footer-right;
+            background-color: saddlebrown;
+            background-image: url(/images/image-about-light.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 267px;
+        }
+    }
+}

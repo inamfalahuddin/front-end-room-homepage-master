@@ -1,0 +1,73 @@
+// Link Navbar
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+// Overlay Layout
+@keyframes overlay-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes overlay-out {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    90% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+// Pagination 
+
+// Animation Hero Image
+@keyframes transition-image {
+    0% {
+
+        background-position: 500px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes transition-content {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
